@@ -1,0 +1,42 @@
+/* Styling only */
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #333333;
+  color: #444;
+  padding: 20px;
+  grid-template-columns: repeat(3,30vw);
+  grid-template-rows: repeat(4,20vh);
+  height: 90vh;
+  gap: 20px;
+  display: grid;
+}
+
+.item {
+  background-color: #3092d7;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 3em;
+}
+.a{
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.b{
+  grid-column:  1/2;
+  grid-row:  2/4;
+}
+
+.e{
+  grid-column: 2/4;
+}
+.f{
+  grid-column: 1/4;
+}
+/* Layouting only  (your work)*/
+
+ 
+ 

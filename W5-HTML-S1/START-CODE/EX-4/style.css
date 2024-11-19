@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.Navigation {
+    background-color: #333;
+    color: rgb(255, 254, 254);
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100vw;
+}
+.NavigationA{
+    grid-column: 1/2;
+}
+.NavigationA img{
+    height: 3rem;
+}
+.NavigationB{
+    grid-column: 2/3;
+}
+.NavigationC{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Navigation a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.text-overlay h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-overlay p {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.shop-button:hover{
+    background-color: #333;
+    color: aliceblue;
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    .text-overlay {
+      font-size: 14px; 
+    }
+    .Navigation {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+    }
+    .NavigationA, .NavigationB, .NavigationC {
+      width: 100%;
+    }
+  }
